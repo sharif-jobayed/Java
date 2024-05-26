@@ -1,11 +1,13 @@
 package Java.dataTypes;
 
-public class Arrays {
+public class TheArrays {
 
     private int[] numbersArray_01;
+    private int[] numbersArray_02;
 
-    public Arrays() {
+    public TheArrays() {
         numbersArray_01 = new int[5];
+        numbersArray_02 = new int[]{1, 2, 3, 4, 5};
     }
 
     private void makeArray_01 () {
@@ -18,6 +20,9 @@ public class Arrays {
     public int[] getNumbersArray_01 () {
         makeArray_01();
         return numbersArray_01;
+    }
+    public int[] getNumbersArray_02 () {
+        return numbersArray_02;
     }
 
 }
