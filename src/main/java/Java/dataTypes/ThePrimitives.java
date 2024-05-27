@@ -1,6 +1,6 @@
 package Java.dataTypes;
 
-public class Primitives {
+public class ThePrimitives {
 
     private int number_01;
     private float float_01;
@@ -9,7 +9,7 @@ public class Primitives {
     private boolean boolean_01;
     private boolean isBoolean_02;
 
-    public Primitives() {
+    public ThePrimitives() {
         this.number_01 = 2;
         this.float_01 = 99999.99f;
         this.double_01 = 9999999;
