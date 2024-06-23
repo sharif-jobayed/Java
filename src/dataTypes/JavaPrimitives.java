@@ -1,10 +1,10 @@
 package dataTypes;
 
 public class JavaPrimitives {
-    private int intValue;
-    private double doubleValue;
-    private boolean booleanValue;
-    private char charValue;
+    private final int intValue;
+    private final double doubleValue;
+    private final boolean booleanValue;
+    private final char charValue;
 
     public JavaPrimitives(int intValue, double doubleValue, boolean booleanValue, char charValue) {
         this.intValue = intValue;
@@ -21,7 +21,7 @@ public class JavaPrimitives {
         return doubleValue;
     }
 
-    public boolean getBooleanValue() {
+    public boolean isBooleanValue() {
         return booleanValue;
     }
 
@@ -30,10 +30,12 @@ public class JavaPrimitives {
     }
 
     public void displayPrimitiveValues() {
-        System.out.println("Primitive Data Types:");
-        System.out.println("int: " + intValue);
-        System.out.println("double: " + doubleValue);
-        System.out.println("boolean: " + booleanValue);
-        System.out.println("char: " + charValue);
+        System.out.printf("Primitive Data Types:%nint: %d%ndouble: %.2f%nboolean: %b%nchar: %c%n",
+                intValue, doubleValue, booleanValue, charValue);
+    }
+
+    public static void main(String[] args) {
+        JavaPrimitives primitives = new JavaPrimitives(10, 20.5, true, 'A');
+        primitives.displayPrimitiveValues();
     }
 }

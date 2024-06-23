@@ -3,8 +3,8 @@ package dataTypes;
 import java.util.List;
 
 public class JavaNonPrimitives {
-    private String stringValue;
-    private List<Integer> integerList;
+    private final String stringValue;
+    private final List<Integer> integerList;
 
     public JavaNonPrimitives(String stringValue, List<Integer> integerList) {
         this.stringValue = stringValue;
@@ -23,5 +23,11 @@ public class JavaNonPrimitives {
         System.out.println("Non-Primitive Data Types:");
         System.out.println("String: " + stringValue);
         System.out.println("List of Integers: " + integerList);
+    }
+
+    public static void main(String[] args) {
+        List<Integer> integers = List.of(1, 2, 3, 4, 5);
+        JavaNonPrimitives javaNonPrimitives = new JavaNonPrimitives("Example String", integers);
+        javaNonPrimitives.displayNonPrimitiveValues();
     }
 }
