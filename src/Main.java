@@ -17,7 +17,7 @@ public class Main {
         System.out.println(myNonPrimitives.getFloat_0002());
         System.out.println(myNonPrimitives.getDouble_0002());
         System.out.println(myNonPrimitives.isBoolean_0002());
-        System.out.println(myNonPrimitives.getList_0001());
+        System.out.println(myNonPrimitives.getList_0002());
         System.out.println(myNonPrimitives.getArrayList_0002());
     }
 }

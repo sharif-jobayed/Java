@@ -10,7 +10,7 @@ public class JavaNonPrimitives {
     private Float float_0002;
     private Double double_0002;
     private Boolean boolean_0002;
-    private List<Integer> list_0001;
+    private List<Integer> list_0002;
     private ArrayList<String> arrayList_0002;
 
     public JavaNonPrimitives() {
@@ -19,7 +19,7 @@ public class JavaNonPrimitives {
         this.float_0002 = 999999.999999999F;
         this.double_0002 = 999999.999999999;
         this.boolean_0002 = false;
-        this.list_0001 = List.of(5, 46, 49, 18, 27, 78, 69);
+        this.list_0002 = List.of(5, 46, 49, 18, 27, 78, 69);
         this.arrayList_0002 = new ArrayList<>(Arrays.asList("Nissan", "Toyota", "Mazda", "Mitsubishi"));
     }
 
@@ -43,8 +43,8 @@ public class JavaNonPrimitives {
         return boolean_0002;
     }
 
-    public Integer getList_0001() {
-        for (int i : list_0001) {
+    public Integer getList_0002() {
+        for (int i : list_0002) {
             System.out.println(i);
         }
         return 0;
