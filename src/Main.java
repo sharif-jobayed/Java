@@ -1,14 +1,21 @@
 import dataTypes.JavaNonPrimitives;
 import dataTypes.JavaPrimitives;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        JavaPrimitives javaPrimitives = new JavaPrimitives(42, 3.14, true, 'A');
-        javaPrimitives.displayPrimitiveValues();
+        // Java Primitives
+        JavaPrimitives myPrimitives = new JavaPrimitives();
+        System.out.println(myPrimitives.getInt_0001());
+        System.out.println(myPrimitives.getFloat_0001());
+        System.out.println(myPrimitives.getDouble_0001());
+        System.out.println(myPrimitives.isBoolean_0001());
 
-        JavaNonPrimitives javaNonPrimitives = new JavaNonPrimitives("Hello, World!", Arrays.asList(1, 2, 3, 4, 5));
-        javaNonPrimitives.displayNonPrimitiveValues();
+        // Java Non-Primitives
+        JavaNonPrimitives myNonPrimitives = new JavaNonPrimitives();
+        System.out.println(myNonPrimitives.getString_0002());
+        System.out.println(myNonPrimitives.getInteger_0002());
+        System.out.println(myNonPrimitives.getFloat_0002());
+        System.out.println(myNonPrimitives.getDouble_0002());
+        System.out.println(myNonPrimitives.isBoolean_0002());
     }
 }

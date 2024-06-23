@@ -1,33 +1,33 @@
 package dataTypes;
 
-import java.util.List;
-
 public class JavaNonPrimitives {
-    private final String stringValue;
-    private final List<Integer> integerList;
+    private String string_0002;
+    private Integer integer_0002;
+    private Float float_0002;
+    private Double double_0002;
+    private Boolean boolean_0002;
 
-    public JavaNonPrimitives(String stringValue, List<Integer> integerList) {
-        this.stringValue = stringValue;
-        this.integerList = integerList;
+    public JavaNonPrimitives() {
+        this.string_0002 = "Sharif Banda codes Java";
+        this.integer_0002 = 999999999;
+        this.float_0002 = 999999.999999999F;
+        this.double_0002 = 999999.999999999;
+        this.boolean_0002 = false;
     }
 
-    public String getStringValue() {
-        return stringValue;
+    public String getString_0002() {
+        return string_0002;
     }
-
-    public List<Integer> getIntegerList() {
-        return integerList;
+    public Integer getInteger_0002() {
+        return integer_0002;
     }
-
-    public void displayNonPrimitiveValues() {
-        System.out.println("Non-Primitive Data Types:");
-        System.out.println("String: " + stringValue);
-        System.out.println("List of Integers: " + integerList);
+    public Float getFloat_0002() {
+        return float_0002;
     }
-
-    public static void main(String[] args) {
-        List<Integer> integers = List.of(1, 2, 3, 4, 5);
-        JavaNonPrimitives javaNonPrimitives = new JavaNonPrimitives("Example String", integers);
-        javaNonPrimitives.displayNonPrimitiveValues();
+    public Double getDouble_0002() {
+        return double_0002;
+    }
+    public Boolean isBoolean_0002() {
+        return boolean_0002;
     }
 }

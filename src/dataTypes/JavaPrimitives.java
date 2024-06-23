@@ -1,41 +1,28 @@
 package dataTypes;
 
 public class JavaPrimitives {
-    private final int intValue;
-    private final double doubleValue;
-    private final boolean booleanValue;
-    private final char charValue;
+    private int int_0001;
+    private float float_0001;
+    private double double_0001;
+    private boolean boolean_0001;
 
-    public JavaPrimitives(int intValue, double doubleValue, boolean booleanValue, char charValue) {
-        this.intValue = intValue;
-        this.doubleValue = doubleValue;
-        this.booleanValue = booleanValue;
-        this.charValue = charValue;
+    public JavaPrimitives() {
+        this.int_0001 = 999999999;
+        this.float_0001 = 999999.999999999f;
+        this.double_0001 = 999999.999999999;
+        this.boolean_0001 = true;
     }
 
-    public int getIntValue() {
-        return intValue;
+    public int getInt_0001() {
+        return int_0001;
     }
-
-    public double getDoubleValue() {
-        return doubleValue;
+    public float getFloat_0001() {
+        return float_0001;
     }
-
-    public boolean isBooleanValue() {
-        return booleanValue;
+    public double getDouble_0001() {
+        return double_0001;
     }
-
-    public char getCharValue() {
-        return charValue;
-    }
-
-    public void displayPrimitiveValues() {
-        System.out.printf("Primitive Data Types:%nint: %d%ndouble: %.2f%nboolean: %b%nchar: %c%n",
-                intValue, doubleValue, booleanValue, charValue);
-    }
-
-    public static void main(String[] args) {
-        JavaPrimitives primitives = new JavaPrimitives(10, 20.5, true, 'A');
-        primitives.displayPrimitiveValues();
+    public boolean isBoolean_0001() {
+        return boolean_0001;
     }
 }
