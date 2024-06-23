@@ -16,12 +16,15 @@ public class JavaPrimitives {
     public int getInt_0001() {
         return int_0001;
     }
+
     public float getFloat_0001() {
         return float_0001;
     }
+
     public double getDouble_0001() {
         return double_0001;
     }
+
     public boolean isBoolean_0001() {
         return boolean_0001;
     }
