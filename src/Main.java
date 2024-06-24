@@ -1,4 +1,5 @@
 import conditionals.IfElse;
+import conditionals.SwitchCase;
 import dataTypes.JavaNonPrimitives;
 import dataTypes.JavaPrimitives;
 
@@ -25,5 +26,9 @@ public class Main {
         IfElse ifElse = new IfElse();
         System.out.println(ifElse.isSame());
         System.out.println(ifElse.getDifference());
+
+        // Switch Case
+        SwitchCase switchCase = new SwitchCase();
+        System.out.println(switchCase.isEqualTo(12));
     }
 }
