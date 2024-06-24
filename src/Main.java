@@ -1,3 +1,4 @@
+import conditionals.IfElse;
 import dataTypes.JavaNonPrimitives;
 import dataTypes.JavaPrimitives;
 
@@ -19,5 +20,10 @@ public class Main {
         System.out.println(myNonPrimitives.isBoolean_0002());
         System.out.println(myNonPrimitives.getList_0002());
         System.out.println(myNonPrimitives.getArrayList_0002());
+
+        // If Else
+        IfElse ifElse = new IfElse();
+        System.out.println(ifElse.isSame());
+        System.out.println(ifElse.getDifference());
     }
 }

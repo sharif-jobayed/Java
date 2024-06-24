@@ -51,8 +51,8 @@ public class JavaNonPrimitives {
     }
 
     public String getArrayList_0002() {
-        for (int i = 0; i < arrayList_0002.size(); i++) {
-            System.out.println(arrayList_0002.get(i));
+        for (String s : arrayList_0002) {
+            System.out.println(s);
         }
         return "";
     }
