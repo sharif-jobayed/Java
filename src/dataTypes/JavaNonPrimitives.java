@@ -14,7 +14,7 @@ public class JavaNonPrimitives {
     private ArrayList<String> arrayList_0002;
 
     public JavaNonPrimitives() {
-        this.string_0002 = "Sharif Banda codes Java";
+        this.string_0002 = "Sharif banda codes Java";
         this.integer_0002 = 999999999;
         this.float_0002 = 999999.999999999F;
         this.double_0002 = 999999.999999999;
