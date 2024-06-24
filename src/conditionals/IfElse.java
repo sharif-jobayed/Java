@@ -5,12 +5,18 @@ public class IfElse {
 
     public IfElse() {
         this.values = new Values(
-                "Hello",
+                "Hello!",
                 12,
                 true,
                 "OK",
                 58,
-                false
+                false,
+                100.00,
+                'R',
+                172.54f,
+                65435131L,
+                (short) 54131,
+                (byte) 54135
         );
     }
 
