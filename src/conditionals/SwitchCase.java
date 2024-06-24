@@ -21,23 +21,15 @@ public class SwitchCase {
     }
 
     public Boolean isEqualTo(int value) {
-        switch (value) {
-            case 12:
-                return values.getInteger_0003().equals(value);
-            case 58:
-                return values.getInteger_0004().equals(value);
-            case 100:
-                return values.getDouble_0005().intValue() == value;
-            case 172:
-                return (int) values.getFloat_0007().floatValue() == value;
-            case 65435131:
-                return values.getLong_0008().intValue() == value;
-            case 54131:
-                return values.getShort_0009().equals((short) value);
-            case 123:
-                return values.getByte_0010().equals((byte) value);
-            default:
-                return false;
-        }
+        return switch (value) {
+            case 12 -> values.getInteger_0003().equals(value);
+            case 58 -> values.getInteger_0004().equals(value);
+            case 100 -> values.getDouble_0005().intValue() == value;
+            case 172 -> (int) values.getFloat_0007().floatValue() == value;
+            case 65435131 -> values.getLong_0008().intValue() == value;
+            case 54131 -> values.getShort_0009().equals((short) value);
+            case 123 -> values.getByte_0010().equals((byte) value);
+            default -> false;
+        };
     }
 }
