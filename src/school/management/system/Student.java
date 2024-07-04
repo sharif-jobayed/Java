@@ -7,7 +7,7 @@ public class Student {
     private int feesPaid;
     private int feesTotal;
 
-    public Student (int id, String name, int grade) {
+    public Student(int id, String name, int grade) {
         this.feesPaid = 0;
         this.feesTotal = 30000;
         this.id = id;
@@ -15,10 +15,11 @@ public class Student {
         this.grade = grade;
     }
 
-    public void setGrade (int grade) {
+    public void setGrade(int grade) {
         this.grade = grade;
     }
-    public void updateFeesPaid (int feesPaid) {
+
+    public void updateFeesPaid(int feesPaid) {
         this.feesPaid = feesPaid;
     }
 }
