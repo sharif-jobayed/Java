@@ -20,6 +20,6 @@ public class Student {
     }
 
     public void updateFeesPaid(int feesPaid) {
-        this.feesPaid = feesPaid;
+        this.feesPaid += feesPaid;
     }
 }
