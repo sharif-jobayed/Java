@@ -36,7 +36,7 @@ public class Main {
         System.out.println("X---------------------X---------------------X");
 
         IfElse ifElse = new IfElse();
-        ifElse.checkDataType(primitiveData.getDoubleValue());
+        ifElse.checkDataType(nonPrimitiveData.getStringValue());
         System.out.println("Current Data Type: " + ifElse.getCurrentDataType());
     }
 }
