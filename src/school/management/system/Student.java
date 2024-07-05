@@ -1,5 +1,7 @@
 package school.management.system;
 
+import static school.management.system.School.updateTotalMoneyEarned;
+
 public class Student {
     private int id;
     private String name;
@@ -21,6 +23,7 @@ public class Student {
 
     public void updateFeesPaid(int feesPaid) {
         this.feesPaid += feesPaid;
+        updateTotalMoneyEarned(feesPaid);
     }
 
     public int getId() {
@@ -41,5 +44,9 @@ public class Student {
 
     public int getFeesTotal() {
         return this.feesTotal;
+    }
+
+    public int getDueFees() {
+        return feesTotal-feesPaid;
     }
 }
