@@ -7,9 +7,9 @@ public class Main {
     public static void main(String[] args) {
         // Teachers list
         List<Teacher> teacherList = new ArrayList<>();
-        teacherList.add(new Teacher(0001, "Imran Khan", 100000));
-        teacherList.add(new Teacher(0002, "Javed Miandad", 70000));
-        teacherList.add(new Teacher(0003, "Shane Warne", 85000));
+        teacherList.add(new Teacher(0001, "Imran Khan", 10000));
+        teacherList.add(new Teacher(0002, "Javed Miandad", 7000));
+        teacherList.add(new Teacher(0003, "Shane Warne", 8500));
 
         // Students list
         List<Student> studentList = new ArrayList<>();
