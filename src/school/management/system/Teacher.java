@@ -1,5 +1,7 @@
 package school.management.system;
 
+import static school.management.system.School.updateTotalMoneySpent;
+
 public class Teacher {
     private int id;
     private String name;
@@ -25,5 +27,6 @@ public class Teacher {
 
     public void setSalary(int salary) {
         this.salary += salary;
+        updateTotalMoneySpent(salary);
     }
 }

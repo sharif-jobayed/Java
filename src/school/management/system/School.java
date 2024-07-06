@@ -27,8 +27,8 @@ public class School {
         totalMoneyEarned += moneyEarned;
     }
 
-    public void updateTotalMoneySpent(int moneySpent) {
-        this.totalMoneyEarned -= moneySpent;
+    public static void updateTotalMoneySpent(int moneySpent) {
+        totalMoneyEarned -= moneySpent;
     }
 
     public List<Teacher> getTeachers() {

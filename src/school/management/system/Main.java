@@ -25,12 +25,17 @@ public class Main {
         School cricketSchool = schoolList.get(0);
         System.out.println("cricketSchool School has earned $"+cricketSchool.getTotalMoneyEarned()+" so far.");
 
+        // Teachers
+        Teacher skipper = teacherList.get(0);
+        Teacher baadeMian = teacherList.get(1);
+        Teacher warnie = teacherList.get(2);
+
         // Students
         Student wasim = studentList.get(0);
         Student inzi = studentList.get(1);
         Student saqlain = studentList.get(2);
 
-        // Student's payments
+        // Student's fees payments
         wasim.updateFeesPaid(5000);
         System.out.println(wasim.getName()+" has paid $"+wasim.getFeesPaid()+" & cricketSchool School has earned $"+cricketSchool.getTotalMoneyEarned()+" so far.");
 
@@ -40,5 +45,14 @@ public class Main {
         saqlain.updateFeesPaid(5000);
         System.out.println(saqlain.getName()+" has paid $"+saqlain.getFeesPaid()+" & cricketSchool School has earned $"+cricketSchool.getTotalMoneyEarned()+" so far.");
 
+        // Teacher's salary payments
+        skipper.setSalary(skipper.getSalary());
+        System.out.println(skipper.getName()+" has been paid & the school's current balance is "+ cricketSchool.getTotalMoneyEarned());
+
+        baadeMian.setSalary(baadeMian.getSalary());
+        System.out.println(baadeMian.getName()+" has been paid & the school's current balance is "+ cricketSchool.getTotalMoneyEarned());
+
+        warnie.setSalary(warnie.getSalary());
+        System.out.println(warnie.getName()+" has been paid & the school's current balance is "+ cricketSchool.getTotalMoneyEarned());
     }
 }
