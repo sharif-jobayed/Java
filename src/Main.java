@@ -1,4 +1,5 @@
 import conditionals.IfElse;
+import dataTypes.GenericData;
 import dataTypes.NonPrimitiveData;
 import dataTypes.PrimitiveData;
 
@@ -38,5 +39,9 @@ public class Main {
         IfElse ifElse = new IfElse();
         ifElse.checkDataType(nonPrimitiveData.getStringValue());
         System.out.println("Current Data Type: " + ifElse.getCurrentDataType());
+
+        System.out.println("X---------------------X---------------------X");
+
+
     }
 }
