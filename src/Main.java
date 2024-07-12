@@ -3,7 +3,9 @@ import dataTypes.GenericData;
 import dataTypes.NonPrimitiveData;
 import dataTypes.PrimitiveData;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,6 +44,20 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
+        GenericData<List<Integer>> genericData_01 = new GenericData<>(new ArrayList<>(5));
 
+        genericData_01.getGData().add(1);
+        genericData_01.getGData().add(2);
+        genericData_01.getGData().add(3);
+        genericData_01.getGData().add(4);
+        genericData_01.getGData().add(5);
+
+        List<Integer> dataList = genericData_01.getGData();
+        System.out.println("Data in the list: " + dataList);
+
+        dataList.add(6);
+        genericData_01.setGData(dataList);
+
+        System.out.println("Modified data in the list: " + genericData_01.getGData());
     }
 }

@@ -1,9 +1,17 @@
 package dataTypes;
 
-public class GenericData <T> {
-    T currentData;
+public class GenericData<T> {
+    private T gData;
 
-    public GenericData(T data) {
-        this.currentData = data;
+    public GenericData(T gData) {
+        this.gData = gData;
+    }
+
+    public T getGData() {
+        return this.gData;
+    }
+
+    public void setGData(T gData) {
+        this.gData = gData;
     }
 }
