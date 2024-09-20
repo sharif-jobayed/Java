@@ -1,5 +1,5 @@
 import conditionals.IfElse;
-import dataTypes.GenericData;
+import dataTypes.GenericData_01;
 import dataTypes.NonPrimitiveData;
 import dataTypes.PrimitiveData;
 
@@ -44,7 +44,7 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
-        GenericData<List<Integer>> genericData_01 = new GenericData<>(new ArrayList<>(5));
+        GenericData_01<List<Integer>> genericData_01 = new GenericData_01<>(new ArrayList<>(5));
 
         genericData_01.getGData().add(1);
         genericData_01.getGData().add(2);

@@ -1,10 +1,10 @@
 package dataTypes;
 
-public class GenericData<T> {
+public class GenericData_01<T> {
     private T gData;
 
     // Constructor
-    public GenericData(T gData) {
+    public GenericData_01(T gData) {
         this.gData = gData;
     }
 
