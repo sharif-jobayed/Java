@@ -35,6 +35,8 @@ public class Main {
         System.out.println("The LinkedList value is: " + nonPrimitiveData.getLinkedList());
         System.out.println("The HashMapGeneric value is: " + nonPrimitiveData.getHashMapGeneric());
         System.out.println("The HashMap value is: " + nonPrimitiveData.getHashMap());
+        nonPrimitiveData.is829InTheList();
+        System.out.println("The Set of predefined Integer is: "+nonPrimitiveData.getSetOfPreDefinedIntegers());
 
         System.out.println("X---------------------X---------------------X");
 

@@ -3,17 +3,22 @@ package dataTypes;
 import java.util.*;
 
 public class NonPrimitiveData {
-    private final String stringValue;
-    private final Integer integerValue;
-    private final Double doubleValue;
-    private final Boolean booleanValue;
-    private final int[] intArray;
-    private final ArrayList<String> arrayList;
-    private final Set<String> hashSet;
-    private final List<Integer> arrayListGeneric;
-    private final LinkedList<String> linkedList;
-    private final Map<Integer, String> hashMapGeneric = new HashMap<>();
-    private final HashMap<String, Integer> hashMap = new HashMap<>();
+    private String stringValue;
+    private Integer integerValue;
+    private Double doubleValue;
+    private Boolean booleanValue;
+    private int[] intArray;
+    private ArrayList<String> arrayList;
+    private Set<String> hashSet;
+    private List<Integer> arrayListGeneric;
+    private LinkedList<String> linkedList;
+    private Map<Integer, String> hashMapGeneric = new HashMap<>();
+    private HashMap<String, Integer> hashMap = new HashMap<>();
+    private List<Integer> listOfPreDefinedIntegers = new ArrayList<>(Arrays.asList(11, 15, 18, 880, 721, 572, 97, 83, 111));
+    private Set<Integer> setOfPreDefinedIntegers = new HashSet<>(Arrays.asList(5153, 165, 1635, 15, 1351, 631, 51, 351, 531, 58, 4658, 9784, 87));
+
+
+
 
     public NonPrimitiveData() {
         this.stringValue = "Hello, World!";
@@ -24,7 +29,7 @@ public class NonPrimitiveData {
 
         this.booleanValue = false;
 
-        this.intArray = new int[] {1, 2, 3, 4, 5};
+        this.intArray = new int[]{1, 2, 3, 4, 5};
 
         this.arrayList = new ArrayList<>(Arrays.asList("Apple", "Banana", "Cherry"));
 
@@ -41,49 +46,73 @@ public class NonPrimitiveData {
         this.hashMap.put("One", 1);
         this.hashMap.put("Two", 2);
         this.hashMap.put("Three", 3);
+
+        this.listOfPreDefinedIntegers.add(521);
+        this.listOfPreDefinedIntegers.add(628);
+        this.listOfPreDefinedIntegers.add(58);
+        this.listOfPreDefinedIntegers.add(92);
+
+        this.setOfPreDefinedIntegers.add(511);
+        this.setOfPreDefinedIntegers.add(83);
     }
 
+
+
+
     public String getStringValue() {
-        return stringValue;
+        return this.stringValue;
     }
 
     public Integer getIntegerValue() {
-        return integerValue;
+        return this.integerValue;
     }
 
     public Double getDoubleValue() {
-        return doubleValue;
+        return this.doubleValue;
     }
 
     public Boolean getBooleanValue() {
-        return booleanValue;
+        return this.booleanValue;
     }
 
     public int[] getIntArray() {
-        return intArray;
+        return this.intArray;
     }
 
     public ArrayList<String> getArrayList() {
-        return arrayList;
+        return this.arrayList;
     }
 
     public Set<String> getHashSet() {
-        return hashSet;
+        return this.hashSet;
     }
 
     public List<Integer> getArrayListGeneric() {
-        return arrayListGeneric;
+        return this.arrayListGeneric;
     }
 
     public LinkedList<String> getLinkedList() {
-        return linkedList;
+        return this.linkedList;
     }
 
     public Map<Integer, String> getHashMapGeneric() {
-        return hashMapGeneric;
+        return this.hashMapGeneric;
     }
 
     public HashMap<String, Integer> getHashMap() {
-        return hashMap;
+        return this.hashMap;
+    }
+
+    public Boolean is829InTheList() {
+        if (this.listOfPreDefinedIntegers.contains(829)) {
+            System.out.println("The ListOfPreDefinedIntegers has the value 829.");
+            return true;
+        }
+        System.out.println("The ListOfPreDefinedIntegers does not have the value 829");
+        return false;
+    }
+
+    public Set<Integer> getSetOfPreDefinedIntegers() {
+        return this.setOfPreDefinedIntegers;
     }
 }
