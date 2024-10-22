@@ -61,5 +61,9 @@ public class Main {
         genericData_01.setGData(dataList);
 
         System.out.println("Modified data in the list: " + genericData_01.getGData());
+
+        System.out.println("X---------------------X---------------------X");
+
+
     }
 }
