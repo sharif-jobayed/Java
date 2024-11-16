@@ -1,32 +1,103 @@
-### IntelliJ IDEA ###
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.jfr
+
+# NodeJS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# NPM
+package-lock.json
+npm-shrinkwrap.json
+
+# Gradle
+.gradle/
+gradle.properties
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/cache/
+.gradle/wrapper/dists/
+gradle-wrapper.properties
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
+# Eclipse
 .project
-.settings
-.springBeans
-.sts4-cache
+.classpath
+.settings/
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.build.xml
 
-### VS Code ###
+# Visual Studio Code
 .vscode/
+.history/
 
-### Mac OS ###
+# Allure Report
+allure-results/
+allure-report/
+
+# Extent Report
+test-output/
+extent-report/
+
+# JMeter
+output.jtl
+jmeter.log
+
+# MySQL
+*.sql
+
+# Operating System Files
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
 
-# IntelliJ Idea
-/.idea/
+# Linux
+*~
+.nfs*
+lost+found/
+
+# Temporary Files and IDE-specific Files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.backup
