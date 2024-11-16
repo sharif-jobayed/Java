@@ -1,4 +1,4 @@
-package dataTypes;
+package javaConcepts.dataTypes;
 
 import java.util.*;
 

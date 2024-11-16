@@ -1,7 +1,10 @@
-import conditionals.IfElse;
-import dataTypes.GenericData_01;
-import dataTypes.NonPrimitiveData;
-import dataTypes.PrimitiveData;
+package javaConcepts;
+
+
+import javaConcepts.conditionals.IfElse;
+import javaConcepts.dataTypes.GenericData_01;
+import javaConcepts.dataTypes.NonPrimitiveData;
+import javaConcepts.dataTypes.PrimitiveData;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -36,7 +39,7 @@ public class Main {
         System.out.println("The HashMapGeneric value is: " + nonPrimitiveData.getHashMapGeneric());
         System.out.println("The HashMap value is: " + nonPrimitiveData.getHashMap());
         nonPrimitiveData.is829InTheList();
-        System.out.println("The Set of predefined Integer is: "+nonPrimitiveData.getSetOfPreDefinedIntegers());
+        System.out.println("The Set of predefined Integer is: " + nonPrimitiveData.getSetOfPreDefinedIntegers());
 
         System.out.println("X---------------------X---------------------X");
 

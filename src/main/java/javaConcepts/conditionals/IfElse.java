@@ -1,8 +1,8 @@
-package conditionals;
+package javaConcepts.conditionals;
 
 
-import dataTypes.NonPrimitiveData;
-import dataTypes.PrimitiveData;
+import javaConcepts.dataTypes.NonPrimitiveData;
+import javaConcepts.dataTypes.PrimitiveData;
 
 public class IfElse {
     private PrimitiveData primitives;

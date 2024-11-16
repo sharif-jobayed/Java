@@ -1,4 +1,4 @@
-package oop;
+package javaConcepts.oop;
 
 public abstract class AbstructClass_001 {
     private String myStringInAbstructClass_001;

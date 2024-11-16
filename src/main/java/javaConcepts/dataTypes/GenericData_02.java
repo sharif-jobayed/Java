@@ -1,4 +1,4 @@
-package dataTypes;
+package javaConcepts.dataTypes;
 
 public class GenericData_02<T extends Number> {
     private T gData;

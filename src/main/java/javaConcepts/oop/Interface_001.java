@@ -1,4 +1,4 @@
-package oop;
+package javaConcepts.oop;
 
 public interface Interface_001 {
     String myStringInInterface_001 = "A String";

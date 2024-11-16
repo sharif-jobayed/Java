@@ -1,4 +1,4 @@
-package dataTypes;
+package javaConcepts.dataTypes;
 
 public class PrimitiveData {
     private byte byteValue;

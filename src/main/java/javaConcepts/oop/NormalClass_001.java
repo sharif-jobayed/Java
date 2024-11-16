@@ -1,4 +1,4 @@
-package oop;
+package javaConcepts.oop;
 
 public class NormalClass_001 extends AbstructClass_001 implements Interface_001 {
     public NormalClass_001(String str, Integer integer) {
