@@ -82,5 +82,13 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
+        Stack_01 stack01 = new Stack_01();
+        stack01.pushToStack();
+        stack01.peekFromStack();
+        stack01.popFromStack();
+        stack01.isStackEmpty();
+
+        System.out.println("X---------------------X---------------------X");
+
     }
 }
