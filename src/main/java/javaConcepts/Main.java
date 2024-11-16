@@ -76,5 +76,11 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
+        List_01 list01 = new List_01();
+        list01.getUnSpecificList_01();
+        list01.getIntList_01(5, 547, 8, 563, 4, 4658, 3, 51, 78);
+
+        System.out.println("X---------------------X---------------------X");
+
     }
 }

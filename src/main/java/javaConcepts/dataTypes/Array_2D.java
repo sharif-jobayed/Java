@@ -12,7 +12,7 @@ public class Array_2D {
     public Integer[][] getIntegerArray_03() {
         for(int i = 0; i< integerArray_03.length; i++) {
             Integer[] integerArray_03_01 = integerArray_03[i];
-            System.out.println("The current sub array is: "+ Arrays.toString(integerArray_03_01));
+            System.out.println("The current sub array is: "+ Arrays.deepToString(integerArray_03_01));
 
             for(int j = 0; j < integerArray_03_01.length; j++) {
                 Integer currentValue = integerArray_03_01[j];
