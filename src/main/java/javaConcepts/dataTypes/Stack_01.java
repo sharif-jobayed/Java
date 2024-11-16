@@ -4,6 +4,7 @@ import java.util.Stack;
 
 public class Stack_01 {
     private Stack unspecificStack_01 = new Stack();
+    private Stack<Integer> intStack_01 = new Stack<>();
 
     public void pushToStack() {
         for (int i = 0; i < 5; i++) {
