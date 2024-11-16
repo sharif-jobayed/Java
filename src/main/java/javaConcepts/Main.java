@@ -2,6 +2,7 @@ package javaConcepts;
 
 
 import javaConcepts.conditionals.IfElse;
+import javaConcepts.dataTypes.Array_1D;
 import javaConcepts.dataTypes.GenericData_01;
 import javaConcepts.dataTypes.NonPrimitiveData;
 import javaConcepts.dataTypes.PrimitiveData;
@@ -64,6 +65,12 @@ public class Main {
         genericData_01.setGData(dataList);
 
         System.out.println("Modified data in the list: " + genericData_01.getGData());
+
+        System.out.println("X---------------------X---------------------X");
+
+        Array_1D array1D = new Array_1D();
+        array1D.getIntegerArray_01(1, 2, 3, 4, 5);
+        array1D.getIntegerArray_02();
 
         System.out.println("X---------------------X---------------------X");
 
