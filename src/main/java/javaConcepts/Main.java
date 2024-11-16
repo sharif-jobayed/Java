@@ -2,10 +2,7 @@ package javaConcepts;
 
 
 import javaConcepts.conditionals.IfElse;
-import javaConcepts.dataTypes.Array_1D;
-import javaConcepts.dataTypes.GenericData_01;
-import javaConcepts.dataTypes.NonPrimitiveData;
-import javaConcepts.dataTypes.PrimitiveData;
+import javaConcepts.dataTypes.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -74,6 +71,10 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
+        Array_2D array2D = new Array_2D();
+        array2D.getIntegerArray_03();
+
+        System.out.println("X---------------------X---------------------X");
 
     }
 }
