@@ -1,8 +1,7 @@
 package commonDS_01;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
+import java.util.stream.Stream;
 
 public class Queue_DS {
     private Queue<Integer> integerQueue;
@@ -26,5 +25,10 @@ public class Queue_DS {
         queueDs.integerQueue.poll();
         System.out.println("The items in the integerQueue are: " + queueDs.integerQueue);
 
+        Stream<Integer> sortedQ_01 = queueDs.integerQueue.stream().sorted();
+        System.out.println("The sorted integerQueue is now: "+ Arrays.toString(sortedQ_01.toArray()));
+
+        Stream<Integer> reverseSortedQ_01 = queueDs.integerQueue.stream().sorted(Comparator.reverseOrder());
+        System.out.println("The reverse sorted integerQueue is now: "+ Arrays.toString(reverseSortedQ_01.toArray()));
     }
 }
