@@ -18,13 +18,13 @@ public class Queue_DS {
 
         // integerQueue
         queueDs.integerQueue.offer(110);
-        System.out.println("The items in the integerQueue are: "+queueDs.integerQueue);
+        System.out.println("The items in the integerQueue are: " + queueDs.integerQueue);
 
         Integer qPeek = queueDs.integerQueue.peek();
-        System.out.println("The item from the integerQueue is: "+qPeek);
+        System.out.println("The item from the integerQueue is: " + qPeek);
 
         queueDs.integerQueue.poll();
-        System.out.println("The items in the integerQueue are: "+queueDs.integerQueue);
+        System.out.println("The items in the integerQueue are: " + queueDs.integerQueue);
 
     }
 }
