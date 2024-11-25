@@ -51,7 +51,7 @@ public class PrimitiveJuggling_01 {
         return (int) getShort_01();
     }
 
-    public long getIntToLong() {
+    public long getIntToLng() {
         return (long) getInt_01();
     }
 

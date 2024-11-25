@@ -102,7 +102,7 @@ public class Main {
 
         System.out.println("The byte to short is: "+ typeJugglingSet01.getByteToShort());
         System.out.println("The short to int is: "+ typeJugglingSet01.getShortToInt());
-        System.out.println("The int to long is: "+ typeJugglingSet01.getIntToLong());
+        System.out.println("The int to long is: "+ typeJugglingSet01.getIntToLng());
         System.out.println("The long to float is: "+ typeJugglingSet01.getLongToFlt());
         System.out.println("The float to double is: "+ typeJugglingSet01.getFloatToDbl());
 
