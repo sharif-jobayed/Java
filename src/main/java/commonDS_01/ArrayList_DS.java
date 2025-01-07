@@ -2,14 +2,19 @@ package commonDS_01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ArrayList_DS {
     private ArrayList<Integer> integerArrayList_01;
     private ArrayList<Integer> integerArrayList_02;
+    private List<Integer> aSampleList_01;
+    private List<Integer> aSampleList_02;
 
     public ArrayList_DS() {
         this.integerArrayList_01 = new ArrayList<>();
         this.integerArrayList_02 = new ArrayList<>(Arrays.asList(5,3153,1,531,351,35,135,1435,1));
+        this.aSampleList_01 = Arrays.asList(1, 2, 3, 4, 5); // Not used anywhere
+        this.aSampleList_02 = new ArrayList<>(); // Not used anywhere
     }
 
     private void setIntegerArrayList_01() {
