@@ -31,4 +31,19 @@ public class NormalClass_001 extends AbstructClass_001 implements Interface_001 
     public void setMyIntegerInAbstructClass_001(Integer myIntegerInAbstructClass_001) {
 
     }
+
+    public String returnHello() {
+        return "Hello!";
+    }
+
+    public String retrunHello(String hello) {
+        return hello;
+    }
+
+    public String retrunHello(int times) {
+        for(int i = 0; i < times; i++) {
+            return "Hello!";
+        }
+        return null;
+    }
 }
