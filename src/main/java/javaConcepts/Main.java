@@ -58,6 +58,7 @@ public class Main {
 
         List<Integer> dataList = genericData_01.getGData();
         System.out.println("Data in the list: " + dataList);
+        System.out.println(dataList.getClass()); // Checks the data type
 
         dataList.add(6);
         genericData_01.setGData(dataList);
