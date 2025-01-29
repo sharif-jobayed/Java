@@ -94,27 +94,31 @@ public class Main {
 
         PrimitiveJuggling_01 typeJugglingSet01 = new PrimitiveJuggling_01();
 
-        System.out.println("The byte is: "+typeJugglingSet01.getByte_01());
-        System.out.println("The short is: "+typeJugglingSet01.getShort_01());
-        System.out.println("The int is: "+typeJugglingSet01.getInt_01());
-        System.out.println("The long is: "+typeJugglingSet01.getLong_01());
-        System.out.println("The float is: "+typeJugglingSet01.getFloat_01());
-        System.out.println("The double is: "+typeJugglingSet01.getDouble_01());
+        System.out.println("The byte is: " + typeJugglingSet01.getByte_01());
+        System.out.println("The short is: " + typeJugglingSet01.getShort_01());
+        System.out.println("The int is: " + typeJugglingSet01.getInt_01());
+        System.out.println("The long is: " + typeJugglingSet01.getLong_01());
+        System.out.println("The float is: " + typeJugglingSet01.getFloat_01());
+        System.out.println("The double is: " + typeJugglingSet01.getDouble_01());
 
-        System.out.println("The byte to short is: "+ typeJugglingSet01.getByteToShort());
-        System.out.println("The short to int is: "+ typeJugglingSet01.getShortToInt());
-        System.out.println("The int to long is: "+ typeJugglingSet01.getIntToLng());
-        System.out.println("The long to float is: "+ typeJugglingSet01.getLongToFlt());
-        System.out.println("The float to double is: "+ typeJugglingSet01.getFloatToDbl());
+        System.out.println("The byte to short is: " + typeJugglingSet01.getByteToShort());
+        System.out.println("The short to int is: " + typeJugglingSet01.getShortToInt());
+        System.out.println("The int to long is: " + typeJugglingSet01.getIntToLng());
+        System.out.println("The long to float is: " + typeJugglingSet01.getLongToFlt());
+        System.out.println("The float to double is: " + typeJugglingSet01.getFloatToDbl());
 
-        System.out.println("The double to int is:"+typeJugglingSet01.dblToInt());
+        System.out.println("The double to int is:" + typeJugglingSet01.dblToInt());
 
         System.out.println("X---------------------X---------------------X");
 
         Set_01 set_01 = new Set_01();
         set_01.setSetWithNoDefaults();
 
-        System.out.println("The set with default values is: "+set_01.getSetWithDefaultValues_01());
-        System.out.println("The sorted set with default values is: "+set_01.getSortedSetWithDefaultValues());
+        System.out.println("The set with default values is: " + set_01.getSetWithDefaultValues_01());
+        System.out.println("The sorted set with default values is: " + set_01.getSortedSetWithDefaultValues());
+
+        System.out.println("X---------------------X---------------------X");
+
+
     }
 }

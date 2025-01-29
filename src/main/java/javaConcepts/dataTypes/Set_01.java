@@ -1,6 +1,8 @@
 package javaConcepts.dataTypes;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -9,7 +11,7 @@ public class Set_01 {
     private Set<Integer> setWithNoDefaults;
 
     public Set_01() {
-        this.setWithDefaultValues_01 = new HashSet<>(Arrays.asList(5,9,97,6,3,1,4,6,3,5,8,7,4,6,9,8,5,8,4));
+        this.setWithDefaultValues_01 = new HashSet<>(Arrays.asList(5, 9, 97, 6, 3, 1, 4, 6, 3, 5, 8, 7, 4, 6, 9, 8, 5, 8, 4));
         this.setWithNoDefaults = new HashSet<>();
     }
 
