@@ -111,5 +111,10 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
+        Set_01 set_01 = new Set_01();
+        set_01.setSetWithNoDefaults();
+
+        System.out.println("The set with default values is: "+set_01.getSetWithDefaultValues_01());
+        System.out.println("The sorted set with default values is: "+set_01.getSortedSetWithDefaultValues());
     }
 }
