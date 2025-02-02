@@ -117,6 +117,9 @@ public class Main {
         System.out.println("The set with default values is: " + set_01.getSetWithDefaultValues_01());
         System.out.println("The sorted set with default values is: " + set_01.getSortedSetWithDefaultValues());
 
+        set_01.setSetWithDefaultValues_01(500);
+        System.out.println("New setWithDefaultValues_01 is: "+set_01.getSetWithDefaultValues_01());
+
         System.out.println("X---------------------X---------------------X");
 
 

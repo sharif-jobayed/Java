@@ -22,6 +22,11 @@ public class Set_01 {
         return this;
     }
 
+    public Set<Integer> setSetWithDefaultValues_01(Integer number) {
+        this.setWithDefaultValues_01.add(number);
+        return this.setWithDefaultValues_01;
+    }
+
     public Set<Integer> getSetWithDefaultValues_01() {
         return this.setWithDefaultValues_01;
     }
