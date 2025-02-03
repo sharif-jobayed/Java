@@ -3,6 +3,8 @@ package javaConcepts;
 
 import javaConcepts.conditionals.IfElse;
 import javaConcepts.dataTypes.*;
+import javaConcepts.randomPractice.CallAMethodInAnother;
+import javaConcepts.randomPractice.Concatinations;
 import javaConcepts.typeJuggling.PrimitiveJuggling_01;
 
 import java.util.ArrayList;
@@ -121,6 +123,19 @@ public class Main {
         System.out.println("New setWithDefaultValues_01 is: "+set_01.getSetWithDefaultValues_01());
 
         System.out.println("X---------------------X---------------------X");
+
+        Concatinations concatinations = new Concatinations();
+
+        System.out.println("An integer + a string results in: "+concatinations.concatIntegerAndString());
+
+        System.out.println("X---------------------X---------------------X");
+
+        CallAMethodInAnother callAMethodInAnother = new CallAMethodInAnother();
+
+        System.out.println("A method called via parameter of another method: "+callAMethodInAnother.callAMethod(callAMethodInAnother.methodToCall()));
+
+        System.out.println("X---------------------X---------------------X");
+
 
 
     }
