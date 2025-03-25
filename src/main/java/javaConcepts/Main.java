@@ -3,6 +3,8 @@ package javaConcepts;
 
 import javaConcepts.conditionals.IfElse;
 import javaConcepts.dataTypes.*;
+import javaConcepts.enumWorks.Day;
+import javaConcepts.enumWorks.Status;
 import javaConcepts.randomPractice.CallAMethodInAnother;
 import javaConcepts.randomPractice.Concatinations;
 import javaConcepts.typeJuggling.PrimitiveJuggling_01;
@@ -136,6 +138,13 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
+        Day friday = Day.FRIDAY;
+        System.out.println("Today is: "+ friday);
+
+        Status notFound = Status.NOT_FOUND;
+        System.out.println("The "+notFound.getStatusCode()+" message is "+notFound.getMessage());
+
+        System.out.println("X---------------------X---------------------X");
 
 
     }
