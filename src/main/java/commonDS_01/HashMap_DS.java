@@ -20,7 +20,13 @@ public class HashMap_DS {
 
     private void setHashMap_01() {
         for(int i = 0; i < 10; i++) {
-            this.hashMap_01.put(i, "Value-"+i);
+            this.hashMap_01.put(i, "Value: "+i);
+        }
+    }
+
+    public void loopThroughHashMap_01() {
+        for(Map.Entry<Integer, String> entry : this.hashMap_01.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
     }
 
@@ -37,5 +43,7 @@ public class HashMap_DS {
         // // hashMap_02
         System.out.println("The items in the hashMap_02 are: "+hashMapDs.hashMap_02);
         System.out.println("The 2nd item is: "+hashMapDs.hashMap_02.get("Two"));
+
+        hashMapDs.loopThroughHashMap_01();
     }
 }
