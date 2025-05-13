@@ -58,5 +58,4 @@ public class Random_0001 {
         System.out.println(random0001.intToLng(12));
         System.out.println(random0001.intToInteger(random0001.num_02));
     }
-
 }
