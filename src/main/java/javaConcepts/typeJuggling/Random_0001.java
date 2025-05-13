@@ -41,7 +41,7 @@ public class Random_0001 {
 
     public Integer intToInteger(int number) {
         Integer n = Integer.valueOf(number);
-        if(n instanceof Integer) {
+        if (n instanceof Integer) {
             return n;
         }
         try {
@@ -50,9 +50,6 @@ public class Random_0001 {
             throw new RuntimeException(e.getMessage());
         }
     }
-
-
-
 
 
     public static void main(String[] args) {
