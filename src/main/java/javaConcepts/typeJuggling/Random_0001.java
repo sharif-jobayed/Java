@@ -5,18 +5,24 @@ import com.sun.jdi.InvalidTypeException;
 public class Random_0001 {
     String text_01;
     String text_02;
+    String text_03;
     Integer num_01;
     int num_02;
 
     public Random_0001() {
         this.text_01 = "Hello!";
         this.text_02 = "18.587";
+        this.text_03 = "712";
         this.num_01 = 122;
         this.num_02 = 197;
     }
 
     public int strToInt(String text) {
-        return Integer.parseInt(text);
+        try{
+            return Integer.parseInt(text);
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Can not parse an int from the String");
+        }
     }
 
     public double strToDbl(String text) {
@@ -57,5 +63,6 @@ public class Random_0001 {
 
         System.out.println(random0001.intToLng(12));
         System.out.println(random0001.intToInteger(random0001.num_02));
+        System.out.println(random0001.strToInt(random0001.text_03));
     }
 }
