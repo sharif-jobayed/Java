@@ -139,6 +139,8 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
+        // Enum
+
         Day friday = Day.FRIDAY;
         System.out.println("Today is: "+ friday);
 
@@ -146,6 +148,8 @@ public class Main {
         System.out.println("The "+notFound.getStatusCode()+" message is "+notFound.getMessage());
 
         System.out.println("X---------------------X---------------------X");
+
+        // Types juggling
 
         Random_0001 random0001 = new Random_0001();
 
