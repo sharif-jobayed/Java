@@ -17,6 +17,26 @@ public class Random_0001 {
         this.num_02 = 197;
     }
 
+    public String getText_01() {
+        return text_01;
+    }
+
+    public String getText_02() {
+        return text_02;
+    }
+
+    public String getText_03() {
+        return text_03;
+    }
+
+    public Integer getNum_01() {
+        return num_01;
+    }
+
+    public int getNum_02() {
+        return num_02;
+    }
+
     public int strToInt(String text) {
         try{
             return Integer.parseInt(text);
@@ -55,14 +75,5 @@ public class Random_0001 {
         } catch (InvalidTypeException e) {
             throw new RuntimeException(e.getMessage());
         }
-    }
-
-
-    public static void main(String[] args) {
-        Random_0001 random0001 = new Random_0001();
-
-        System.out.println(random0001.intToLng(12));
-        System.out.println(random0001.intToInteger(random0001.num_02));
-        System.out.println(random0001.strToInt(random0001.text_03));
     }
 }

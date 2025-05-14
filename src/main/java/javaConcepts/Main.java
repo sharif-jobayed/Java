@@ -8,6 +8,7 @@ import javaConcepts.enumWorks.Status;
 import javaConcepts.randomPractice.CallAMethodInAnother;
 import javaConcepts.randomPractice.Concatinations;
 import javaConcepts.typeJuggling.PrimitiveJuggling_01;
+import javaConcepts.typeJuggling.Random_0001;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -143,6 +144,14 @@ public class Main {
 
         Status notFound = Status.NOT_FOUND;
         System.out.println("The "+notFound.getStatusCode()+" message is "+notFound.getMessage());
+
+        System.out.println("X---------------------X---------------------X");
+
+        Random_0001 random0001 = new Random_0001();
+
+        System.out.println("int to long: "+random0001.intToLng(12));
+        System.out.println("int to Integer: "+random0001.intToInteger(random0001.getNum_02()));
+        System.out.println("String to int: "+random0001.strToInt(random0001.getText_03()));
 
         System.out.println("X---------------------X---------------------X");
 
