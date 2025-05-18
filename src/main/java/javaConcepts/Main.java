@@ -16,7 +16,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         // Primitive data types
+
         PrimitiveData primitiveData = new PrimitiveData();
         System.out.println("The byte value is: " + primitiveData.getByteValue());
         System.out.println("The short value is: " + primitiveData.getShortValue());
@@ -30,6 +32,7 @@ public class Main {
         System.out.println("X---------------------X---------------------X");
 
         // Non-Primitive data types
+
         NonPrimitiveData nonPrimitiveData = new NonPrimitiveData();
         System.out.println("The String value is: " + nonPrimitiveData.getStringValue());
         System.out.println("The Integer value is: " + nonPrimitiveData.getIntegerValue());
@@ -47,11 +50,15 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
+        // If/Else
+
         IfElse ifElse = new IfElse();
         ifElse.checkDataType(nonPrimitiveData.getStringValue());
         System.out.println("Current Data Type: " + ifElse.getCurrentDataType());
 
         System.out.println("X---------------------X---------------------X");
+
+        // Generic
 
         GenericData_01<List<Integer>> genericData_01 = new GenericData_01<>(new ArrayList<>(5));
 
