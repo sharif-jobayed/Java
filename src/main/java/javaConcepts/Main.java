@@ -123,29 +123,29 @@ public class Main {
         System.out.println("The sorted set with default values is: " + set_01.getSortedSetWithDefaultValues());
 
         set_01.setSetWithDefaultValues_01(500);
-        System.out.println("New setWithDefaultValues_01 is: "+set_01.getSetWithDefaultValues_01());
+        System.out.println("New setWithDefaultValues_01 is: " + set_01.getSetWithDefaultValues_01());
 
         System.out.println("X---------------------X---------------------X");
 
         Concatinations concatinations = new Concatinations();
 
-        System.out.println("An integer + a string results in: "+concatinations.concatIntegerAndString());
+        System.out.println("An integer + a string results in: " + concatinations.concatIntegerAndString());
 
         System.out.println("X---------------------X---------------------X");
 
         CallAMethodInAnother callAMethodInAnother = new CallAMethodInAnother();
 
-        System.out.println("A method called via parameter of another method: "+callAMethodInAnother.callAMethod(callAMethodInAnother.methodToCall()));
+        System.out.println("A method called via parameter of another method: " + callAMethodInAnother.callAMethod(callAMethodInAnother.methodToCall()));
 
         System.out.println("X---------------------X---------------------X");
 
         // Enum
 
         Day friday = Day.FRIDAY;
-        System.out.println("Today is: "+ friday);
+        System.out.println("Today is: " + friday);
 
         Status notFound = Status.NOT_FOUND;
-        System.out.println("The "+notFound.getStatusCode()+" message is "+notFound.getMessage());
+        System.out.println("The " + notFound.getStatusCode() + " message is " + notFound.getMessage());
 
         System.out.println("X---------------------X---------------------X");
 
@@ -153,9 +153,9 @@ public class Main {
 
         Random_0001 random0001 = new Random_0001();
 
-        System.out.println("int to long: "+random0001.intToLng(12));
-        System.out.println("int to Integer: "+random0001.intToInteger(random0001.getNum_02()));
-        System.out.println("String to int: "+random0001.strToInt(random0001.getText_03()));
+        System.out.println("int to long: " + random0001.intToLng(12));
+        System.out.println("int to Integer: " + random0001.intToInteger(random0001.getNum_02()));
+        System.out.println("String to int: " + random0001.strToInt(random0001.getText_03()));
 
         System.out.println("X---------------------X---------------------X");
 

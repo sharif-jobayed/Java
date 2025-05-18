@@ -38,7 +38,7 @@ public class Random_0001 {
     }
 
     public int strToInt(String text) {
-        try{
+        try {
             return Integer.parseInt(text);
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Can not parse an int from the String");
