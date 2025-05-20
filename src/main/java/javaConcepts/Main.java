@@ -5,6 +5,7 @@ import javaConcepts.conditionals.IfElse;
 import javaConcepts.dataTypes.*;
 import javaConcepts.enumWorks.Day;
 import javaConcepts.enumWorks.Status;
+import javaConcepts.fileAndDirectory.CreateADirectory;
 import javaConcepts.randomPractice.CallAMethodInAnother;
 import javaConcepts.randomPractice.Concatinations;
 import javaConcepts.typeJuggling.PrimitiveJuggling_01;
@@ -163,6 +164,16 @@ public class Main {
         System.out.println("int to long: " + random0001.intToLng(12));
         System.out.println("int to Integer: " + random0001.intToInteger(random0001.getNum_02()));
         System.out.println("String to int: " + random0001.strToInt(random0001.getText_03()));
+
+        System.out.println("X---------------------X---------------------X");
+
+        // CreateADirectory
+
+        CreateADirectory createADirectory = new CreateADirectory("src/main/java/javaConcepts/fileAndDirectory/createdDirectories/dir");
+
+        createADirectory.createDirectory();
+        createADirectory.createMultipleDirectories();
+
 
         System.out.println("X---------------------X---------------------X");
 
