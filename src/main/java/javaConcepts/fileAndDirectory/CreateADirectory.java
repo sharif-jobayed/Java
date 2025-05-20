@@ -19,21 +19,21 @@ public class CreateADirectory {
     }
 
     public void createDirectory() {
-        try{
+        try {
             Files.createDirectories(this.path_01);
             System.out.println("Directory creation was successful!");
-        } catch(IOException e) {
-            System.out.println("Directory creation failed: "+e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Directory creation failed: " + e.getMessage());
         }
     }
 
     public void createMultipleDirectories() {
-        for(int i = 0; i < 10; i++) {
-            try{
-                Path aPath = Paths.get(this.dir+i);
+        for (int i = 0; i < 10; i++) {
+            try {
+                Path aPath = Paths.get(this.dir + i);
                 Files.createDirectories(aPath);
-            } catch(IOException e) {
-                System.out.println("Failed to create the directory: "+e.getMessage());
+            } catch (IOException e) {
+                System.out.println("Failed to create the directory: " + e.getMessage());
             }
         }
     }
