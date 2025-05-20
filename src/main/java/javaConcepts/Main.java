@@ -5,6 +5,7 @@ import javaConcepts.conditionals.IfElse;
 import javaConcepts.dataTypes.*;
 import javaConcepts.enumWorks.Day;
 import javaConcepts.enumWorks.Status;
+import javaConcepts.fileAndDirectory.CheckForExistence;
 import javaConcepts.fileAndDirectory.CreateADirectory;
 import javaConcepts.randomPractice.CallAMethodInAnother;
 import javaConcepts.randomPractice.Concatinations;
@@ -171,9 +172,16 @@ public class Main {
 
         CreateADirectory createADirectory = new CreateADirectory("src/main/java/javaConcepts/fileAndDirectory/createdDirectories/dir");
 
-        createADirectory.createDirectory();
-        createADirectory.createMultipleDirectories();
+        // createADirectory.createDirectory();
+        // createADirectory.createMultipleDirectories();
 
+        System.out.println("X---------------------X---------------------X");
+
+        // CheckForExistence
+
+        CheckForExistence checkForExistence = new CheckForExistence("src/main/java/javaConcepts/fileAndDirectory/createdDirectories");
+
+        checkForExistence.checkIfDirsExists("ir5");
 
         System.out.println("X---------------------X---------------------X");
 
