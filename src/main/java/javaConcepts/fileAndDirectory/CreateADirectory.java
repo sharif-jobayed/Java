@@ -3,7 +3,6 @@ package javaConcepts.fileAndDirectory;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class CreateADirectory {
     private String dir;
@@ -30,8 +29,13 @@ public class CreateADirectory {
     public void createMultipleDirectories() {
         for (int i = 0; i < 10; i++) {
             try {
-                Path aPath = Paths.get(this.dir + i);
-                Files.createDirectories(aPath);
+                String currentDir = this.dir + i;
+                Path path = Path.of(currentDir);
+                if (!Files.exists(path)) {
+                    Files.createDirectories(path);
+                } else {
+                    System.out.println("The directory " + currentDir + " already exists.");
+                }
             } catch (IOException e) {
                 System.out.println("Failed to create the directory: " + e.getMessage());
             }

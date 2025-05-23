@@ -172,8 +172,8 @@ public class Main {
 
         CreateADirectory createADirectory = new CreateADirectory("src/main/java/javaConcepts/fileAndDirectory/createdDirectories/dir");
 
-        // createADirectory.createDirectory();
-        // createADirectory.createMultipleDirectories();
+         createADirectory.createDirectory();
+         createADirectory.createMultipleDirectories();
 
         System.out.println("X---------------------X---------------------X");
 
