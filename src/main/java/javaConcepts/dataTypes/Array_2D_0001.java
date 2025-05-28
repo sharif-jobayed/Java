@@ -18,12 +18,14 @@ public class Array_2D_0001 {
     }
 
     public String[] getArray() {
-        for(String[] arr1:this.get2DArray()) {
-            System.out.println("Current Array is: "+ Arrays.toString(arr1));
-            for(String arr2:arr1) {
-                System.out.println("Current String is: "+arr2);
+        for (String[] arr1 : this.get2DArray()) {
+            System.out.println("Current Array is: " + Arrays.toString(arr1));
+
+            for (String arr2 : arr1) {
+                System.out.println("Current String is: " + arr2);
             }
-            return arr1;
+
+//            return arr1;
         }
         return null;
     }
