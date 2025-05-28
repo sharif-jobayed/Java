@@ -185,6 +185,15 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X");
 
+        // Array_2D_0001
+
+        Array_2D_0001 array_2D_0001 = new Array_2D_0001();
+
+        array_2D_0001.getArray();
+
+        System.out.println("X---------------------X---------------------X");
+
+
 
     }
 }
