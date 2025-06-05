@@ -19,7 +19,7 @@ public class CreateADirectory {
 
     public void createDirectory() {
         try {
-            Files.createDirectories(this.path_01);
+            Files.createDirectories(this.getPath_01());
             System.out.println("Directory creation was successful!");
         } catch (IOException e) {
             System.out.println("Directory creation failed: " + e.getMessage());
