@@ -5,8 +5,8 @@ import javaConcepts.conditionals.IfElse;
 import javaConcepts.dataTypes.*;
 import javaConcepts.enumWorks.Day;
 import javaConcepts.enumWorks.Status;
-import javaConcepts.fileAndDirectory.CheckForExistence;
-import javaConcepts.fileAndDirectory.CreateADirectory;
+import javaConcepts.fileAndDirectory.CheckExistense;
+import javaConcepts.fileAndDirectory.CreateDirectories;
 import javaConcepts.randomPractice.CallAMethodInAnother;
 import javaConcepts.randomPractice.Concatinations;
 import javaConcepts.typeJuggling.PrimitiveJuggling_01;
@@ -31,7 +31,7 @@ public class Main {
         System.out.println("The char value is: " + primitiveData.getCharValue());
         System.out.println("The boolean value is: " + primitiveData.isBooleanValue());
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         // Non-Primitive data types
 
@@ -50,7 +50,7 @@ public class Main {
         nonPrimitiveData.is829InTheList();
         System.out.println("The Set of predefined Integer is: " + nonPrimitiveData.getSetOfPreDefinedIntegers());
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         // If/Else
 
@@ -58,7 +58,7 @@ public class Main {
         ifElse.checkDataType(nonPrimitiveData.getStringValue());
         System.out.println("Current Data Type: " + ifElse.getCurrentDataType());
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         // Generic
 
@@ -79,24 +79,24 @@ public class Main {
 
         System.out.println("Modified data in the list: " + genericData_01.getGData());
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         Array_1D array1D = new Array_1D();
         array1D.getIntegerArray_01(1, 2, 3, 4, 5);
         array1D.getIntegerArray_02();
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         Array_2D array2D = new Array_2D();
         array2D.getIntegerArray_03();
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         List_01 list01 = new List_01();
         list01.getUnSpecificList_01();
         list01.getIntList_01(5, 547, 8, 563, 4, 4658, 3, 51, 78);
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         Stack_01 stack01 = new Stack_01();
         stack01.pushToStack();
@@ -104,7 +104,7 @@ public class Main {
         stack01.popFromStack();
         stack01.isStackEmpty();
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         PrimitiveJuggling_01 typeJugglingSet01 = new PrimitiveJuggling_01();
 
@@ -123,7 +123,7 @@ public class Main {
 
         System.out.println("The double to int is:" + typeJugglingSet01.dblToInt());
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         Set_01 set_01 = new Set_01();
         set_01.setSetWithNoDefaults();
@@ -134,19 +134,19 @@ public class Main {
         set_01.setSetWithDefaultValues_01(500);
         System.out.println("New setWithDefaultValues_01 is: " + set_01.getSetWithDefaultValues_01());
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         Concatinations concatinations = new Concatinations();
 
         System.out.println("An integer + a string results in: " + concatinations.concatIntegerAndString());
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         CallAMethodInAnother callAMethodInAnother = new CallAMethodInAnother();
 
         System.out.println("A method called via parameter of another method: " + callAMethodInAnother.callAMethod(callAMethodInAnother.methodToCall()));
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         // Enum
 
@@ -156,7 +156,7 @@ public class Main {
         Status notFound = Status.NOT_FOUND;
         System.out.println("The " + notFound.getStatusCode() + " message is " + notFound.getMessage());
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         // Types juggling
 
@@ -166,24 +166,31 @@ public class Main {
         System.out.println("int to Integer: " + random0001.intToInteger(random0001.getNum_02()));
         System.out.println("String to int: " + random0001.strToInt(random0001.getText_03()));
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
-        // CreateADirectory
+        // CreateDirectories
+        CreateDirectories createDirectories = new CreateDirectories("D:/Enter/LnD/Development/Git/Java/src/main/java/javaConcepts/fileAndDirectory/createdDirectories/dir");
 
-        CreateADirectory createADirectory = new CreateADirectory("src/main/java/javaConcepts/fileAndDirectory/createdDirectories/dir");
+        createDirectories.createADirectory();
+        createDirectories.createMultipleDirectories();
 
-         createADirectory.createDirectory();
-         createADirectory.createMultipleDirectories();
 
-        System.out.println("X---------------------X---------------------X");
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
-        // CheckForExistence
+        // CheckExistense (Directories)
 
-        CheckForExistence checkForExistence = new CheckForExistence("src/main/java/javaConcepts/fileAndDirectory/createdDirectories");
+        CheckExistense checkExistense = new CheckExistense("D:/Enter/LnD/Development/Git/Java/src/main/java/javaConcepts/fileAndDirectory/createdDirectories/");
 
-        checkForExistence.checkIfDirsExists("ir5");
+        checkExistense.checkSingleDirectory("dir");
+        System.out.println("Current directory is: "+checkExistense.getPath().toString());
+        checkExistense.checkMultipleDirectories();
 
-        System.out.println("X---------------------X---------------------X");
+
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
+
+        // Delete Directories
+
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
         // Array_2D_0001
 
@@ -191,8 +198,7 @@ public class Main {
 
         array_2D_0001.getArray();
 
-        System.out.println("X---------------------X---------------------X");
-
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
 
     }
