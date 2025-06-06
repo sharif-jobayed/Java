@@ -5,7 +5,7 @@ import javaConcepts.conditionals.IfElse;
 import javaConcepts.dataTypes.*;
 import javaConcepts.enumWorks.Day;
 import javaConcepts.enumWorks.Status;
-import javaConcepts.fileAndDirectory.CheckExistense;
+import javaConcepts.fileAndDirectory.CheckExistence;
 import javaConcepts.fileAndDirectory.CreateDirectories;
 import javaConcepts.randomPractice.CallAMethodInAnother;
 import javaConcepts.randomPractice.Concatinations;
@@ -177,13 +177,13 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
-        // CheckExistense (Directories)
+        // CheckExistence (Directories)
 
-        CheckExistense checkExistense = new CheckExistense("D:/Enter/LnD/Development/Git/Java/src/main/java/javaConcepts/fileAndDirectory/createdDirectories/");
+        CheckExistence checkExistence = new CheckExistence("D:/Enter/LnD/Development/Git/Java/src/main/java/javaConcepts/fileAndDirectory/createdDirectories/");
 
-        checkExistense.checkSingleDirectory("dir");
-        System.out.println("Current directory is: "+checkExistense.getPath().toString());
-        checkExistense.checkMultipleDirectories();
+        checkExistence.checkSingleDirectory("dir");
+        System.out.println("Current directory is: "+ checkExistence.getPath().toString());
+        checkExistence.checkMultipleDirectories();
 
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");

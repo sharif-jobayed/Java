@@ -5,11 +5,11 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class CheckExistense {
+public class CheckExistence {
     private String pathString;
     private Path path;
 
-    public CheckExistense(String pathString) {
+    public CheckExistence(String pathString) {
         this.pathString = pathString;
         this.path = Path.of(pathString);
     }
