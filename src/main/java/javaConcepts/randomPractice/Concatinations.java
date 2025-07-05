@@ -19,3 +19,4 @@ public class Concatinations {
         return this.integer_0001+this.double_0001;
     }
 }
+
