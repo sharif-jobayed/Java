@@ -139,6 +139,7 @@ public class Main {
         Concatinations concatinations = new Concatinations();
 
         System.out.println("An integer + a string results in: " + concatinations.concatIntegerAndString());
+        System.out.println("An integer + a double results in: " + concatinations.concatIntegerAndDouble());
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 

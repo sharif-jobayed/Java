@@ -14,4 +14,8 @@ public class Concatinations {
     public String concatIntegerAndString() {
         return this.integer_0001+this.string_0001;
     }
+
+    public double concatIntegerAndDouble() {
+        return this.integer_0001+this.double_0001;
+    }
 }
