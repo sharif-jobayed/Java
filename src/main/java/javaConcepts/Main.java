@@ -7,6 +7,7 @@ import javaConcepts.enumWorks.Day;
 import javaConcepts.enumWorks.Status;
 import javaConcepts.fileAndDirectory.CheckExistence;
 import javaConcepts.fileAndDirectory.CreateDirectories;
+import javaConcepts.randomPractice.ArrayBasics_0001;
 import javaConcepts.randomPractice.CallAMethodInAnother;
 import javaConcepts.randomPractice.Concatinations;
 import javaConcepts.typeJuggling.PrimitiveJuggling_01;
@@ -198,6 +199,17 @@ public class Main {
         Array_2D_0001 array_2D_0001 = new Array_2D_0001();
 
         array_2D_0001.getArray();
+
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
+
+        // Array Basics 0001
+
+        int[] anIntArray = {1,2,3,4};
+
+        ArrayBasics_0001 arrayBasics_0001_01 = new ArrayBasics_0001(anIntArray);
+        System.out.println("The total of arrayBasics_0001_01 is: "+arrayBasics_0001_01.getSum());
+
+
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
