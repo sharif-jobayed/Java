@@ -20,3 +20,4 @@ public class ArrayBasics_0001 {
         return total;
     }
 }
+
