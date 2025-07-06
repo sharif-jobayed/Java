@@ -7,9 +7,10 @@ import javaConcepts.enumWorks.Day;
 import javaConcepts.enumWorks.Status;
 import javaConcepts.fileAndDirectory.CheckExistence;
 import javaConcepts.fileAndDirectory.CreateDirectories;
-import javaConcepts.randomPractice.ArrayBasics_0001;
+import javaConcepts.randomPractice.ArraySum_0001;
 import javaConcepts.randomPractice.CallAMethodInAnother;
 import javaConcepts.randomPractice.Concatinations;
+import javaConcepts.randomPractice.ListAverage_0001;
 import javaConcepts.typeJuggling.PrimitiveJuggling_01;
 import javaConcepts.typeJuggling.Random_0001;
 
@@ -202,17 +203,23 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
-        // Array Basics 0001
+        // ArraySum_0001
 
         int[] anIntArray = {1,2,3,4};
 
-        ArrayBasics_0001 arrayBasics_0001_01 = new ArrayBasics_0001(anIntArray);
-        System.out.println("The total of arrayBasics_0001_01 is: "+arrayBasics_0001_01.getSum());
-
-
+        ArraySum_0001 arraySum_0001_01 = new ArraySum_0001(anIntArray);
+        System.out.println("The total of arraySum_0001_01 is: "+ arraySum_0001_01.getSum());
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
+        // ListAverage_0001
+
+        List<Double> dblValues_01 = new ArrayList<>(List.of(1.57, 2.78, 3.15, 4.64));
+
+        ListAverage_0001 listAverage_0001_01 = new ListAverage_0001(dblValues_01);
+        System.out.println("The average of dblValues_01 is: "+listAverage_0001_01.getAverage());
+
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
     }
 }

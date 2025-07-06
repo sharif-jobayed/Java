@@ -2,10 +2,10 @@
 
 package javaConcepts.randomPractice;
 
-public class ArrayBasics_0001 {
+public class ArraySum_0001 {
     private int[] intArray;
 
-    public ArrayBasics_0001(int[] intArray) {
+    public ArraySum_0001(int[] intArray) {
         this.intArray = intArray;
     }
 
@@ -20,4 +20,3 @@ public class ArrayBasics_0001 {
         return total;
     }
 }
-
