@@ -7,16 +7,12 @@ import javaConcepts.enumWorks.Day;
 import javaConcepts.enumWorks.Status;
 import javaConcepts.fileAndDirectory.CheckExistence;
 import javaConcepts.fileAndDirectory.CreateDirectories;
-import javaConcepts.randomPractice.ArraySum_0001;
-import javaConcepts.randomPractice.CallAMethodInAnother;
-import javaConcepts.randomPractice.Concatinations;
-import javaConcepts.randomPractice.ListAverage_0001;
+import javaConcepts.randomPractice.*;
 import javaConcepts.typeJuggling.PrimitiveJuggling_01;
 import javaConcepts.typeJuggling.Random_0001;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -127,14 +123,43 @@ public class Main {
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
+        // Set_01
+
         Set_01 set_01 = new Set_01();
         set_01.setSetWithNoDefaults();
 
-        System.out.println("The set with default values is: " + set_01.getSetWithDefaultValues_01());
-        System.out.println("The sorted set with default values is: " + set_01.getSortedSetWithDefaultValues());
+        System.out.println("The set with default values-01 is: " + set_01.getSetWithDefaultValues_01());
+        System.out.println("The sorted set with default values-01 is: " + set_01.getSortedSetWithDefaultValues_01());
 
         set_01.setSetWithDefaultValues_01(500);
         System.out.println("New setWithDefaultValues_01 is: " + set_01.getSetWithDefaultValues_01());
+
+        set_01.setSetWithDefaultValues_02(500);
+        System.out.println("New setWithDefaultValues_02 is: " + set_01.getSetWithDefaultValues_01());
+
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
+
+        // Map_01
+
+        Map<Integer, String> numbers = new HashMap<>(Map.of(
+                1, "One",
+                2, "Two",
+                3, "Three",
+                4, "Four",
+                5, "Five"
+        ));
+
+        Map_01 map_01_01 = new Map_01(numbers);
+
+        map_01_01.addEntry(6, "Six");
+        map_01_01.addEntry(0, "Zero");
+        System.out.println("Current map_01_01 is: "+map_01_01.getNumberMap_0001());
+        System.out.println("Current values are: "+map_01_01.getValuesAsString());
+        map_01_01.searchAValue("Three");
+
+
+
+
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
@@ -220,6 +245,14 @@ public class Main {
         System.out.println("The average of dblValues_01 is: "+listAverage_0001_01.getAverage());
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");
+
+        // WordFrequency_0001
+
+        String sentence = "Java is fun, Java is powerful, Java is versatile.";
+
+        WordFrequency_0001 wordFrequency_0001_01 = new WordFrequency_0001();
+
+
 
     }
 }
