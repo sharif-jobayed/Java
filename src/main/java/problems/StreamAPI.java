@@ -1,17 +1,27 @@
 package problems;
 
+import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class StreamAPI {
 
-    // Sort the given Map by Values
     public Map<Integer, String> sortByValues(Map<Integer, String> aMap) {
-        aMap.entrySet()
+        return aMap.entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByValue())
-                .forEach(v -> System.out.println("The fruit is: "+v.getKey() + " " + v.getValue()));
-
-        return aMap;
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue, LinkedHashMap::new)
+                );
     }
 
+    public Map<Integer, String> reverseSortByValues(Map<Integer, String> aMap) {
+        return aMap.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue, LinkedHashMap::new)
+                );
+    }
 }

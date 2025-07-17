@@ -1,6 +1,5 @@
 package problems;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,7 +34,8 @@ public class Main {
         ));
         fruits.put(5, "Lemon");
 
-        stAPI1.sortByValues(fruits);
+        System.out.println("The sorted fruites are: "+ stAPI1.sortByValues(fruits));
+        System.out.println("The reversed sorted fruites are: "+ stAPI1.reverseSortByValues(fruits));
 
 
         System.out.println("X-----------------------------------StreamAPI ends-----------------------------------X");
@@ -45,7 +45,7 @@ public class Main {
 
         PlayWithArrays pwA1 = new PlayWithArrays();
 
-        int[] anArr0001 = {5,8,76,3,75,3};
+        int[] anArr0001 = {5, 8, 76, 3, 75, 3};
         pwA1.findLargestNum(anArr0001);
         pwA1.sortArray(anArr0001);
         pwA1.reverseArray(anArr0001);
@@ -59,12 +59,11 @@ public class Main {
 
         PlayWithLists pl0001 = new PlayWithLists();
 
-        Integer[] anIntegerArr0001 = {1,2,3,4,5};
-        List<Integer> aList0001 = List.of(68,7,6341,634,313,213,1);
+        Integer[] anIntegerArr0001 = {1, 2, 3, 4, 5};
+        List<Integer> aList0001 = List.of(68, 7, 6341, 634, 313, 213, 1);
         pl0001.isEven(anIntegerArr0001);
         pl0001.sortAList(aList0001);
         pl0001.reverseSortAList(aList0001);
-
 
 
         System.out.println("X-----------------------------------PlayWithLists ends-----------------------------------X");
@@ -82,7 +81,12 @@ public class Main {
 
         System.out.println("X----------------------------------PlayWithSets starts----------------------------------X");
 
+        // PlayWithSets
 
+        PlayWithSets pwS1 = new PlayWithSets();
+
+        Integer[] intArr0001 = {1, 1, 2, 2, 3, 4, 5, 6, 6};
+        pwS1.listAsUnique(intArr0001);
 
         System.out.println("X-----------------------------------PlayWithSets ends-----------------------------------X");
 
