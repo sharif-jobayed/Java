@@ -68,5 +68,10 @@ public class StringManipulations {
         return aString;
     }
 
-
+    // Get a part of the given String
+    public String getAPartOfAString(String aString) {
+        String cutString = aString.substring(3, 8);
+        System.out.println("The part of the word/sentence is: " + cutString);
+        return cutString.trim();
+    }
 }

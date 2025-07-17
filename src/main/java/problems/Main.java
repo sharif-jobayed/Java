@@ -9,11 +9,12 @@ public class Main {
 
         System.out.println("X----------------------------------StringManipulations starts----------------------------------X");
 
-        StringManipulations rs1 = new StringManipulations();
-        rs1.sortString("How are you?");
-        rs1.reverseSortAString("Hey there!");
-        rs1.reverseString("Hello!");
-        rs1.makeRandomStrings("Hello!");
+        StringManipulations sm1 = new StringManipulations();
+        sm1.sortString("How are you?");
+        sm1.reverseSortAString("Hey there!");
+        sm1.reverseString("Hello!");
+        sm1.makeRandomStrings("Hello!");
+        sm1.getAPartOfAString("Hello World");
 
 
         System.out.println("X-----------------------------------StringManipulations ends-----------------------------------X");
@@ -55,6 +56,23 @@ public class Main {
 
 
         System.out.println("X-----------------------------------PlayWithLists ends-----------------------------------X");
+
+
+        System.out.println("X----------------------------------PlayWithMaps starts----------------------------------X");
+
+        // PlayWithMaps
+
+        PlayWithMaps pwM1 = new PlayWithMaps();
+        pwM1.countCharacters("Hello World!");
+
+        System.out.println("X-----------------------------------PlayWithMaps ends-----------------------------------X");
+
+
+        System.out.println("X----------------------------------PlayWithSets starts----------------------------------X");
+
+
+
+        System.out.println("X-----------------------------------PlayWithSets ends-----------------------------------X");
 
     }
 
