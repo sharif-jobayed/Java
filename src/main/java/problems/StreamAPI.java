@@ -9,7 +9,7 @@ public class StreamAPI {
         aMap.entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByValue())
-                .forEach(v -> System.out.println(v.getKey() + " " + v.getValue()));
+                .forEach(v -> System.out.println("The fruit is: "+v.getKey() + " " + v.getValue()));
 
         return aMap;
     }
