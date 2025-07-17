@@ -32,6 +32,7 @@ public class PlayWithArrays {
         int[] reversed = new int[arr.length];
 
         for(int i = 0; i < arr.length; i++) {
+            System.out.println("Current index is: "+(arr.length - 1 - i));
             reversed[i] = arr[arr.length - 1 - i];
         }
 
