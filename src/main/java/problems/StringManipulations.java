@@ -33,7 +33,7 @@ public class StringManipulations {
             aStrBuilder.append(aStringArr[i]);
         }
 
-        System.out.println("The reversed String is: "+ aStrBuilder.toString());
+        System.out.println("The reversed String is: " + aStrBuilder);
         return aStrBuilder.toString();
 
     }
@@ -51,7 +51,7 @@ public class StringManipulations {
             reversed.append(aString.charAt(i));
         }
 
-        System.out.println("The reversed string is: " + reversed.toString());
+        System.out.println("The manual reversed string is: " + reversed);
         return reversed.toString();
     }
 
@@ -67,4 +67,6 @@ public class StringManipulations {
         System.out.println("The random word/sentence is: " + randomString.toString());
         return aString;
     }
+
+
 }
