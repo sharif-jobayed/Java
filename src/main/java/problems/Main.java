@@ -76,6 +76,10 @@ public class Main {
         PlayWithMaps pwM1 = new PlayWithMaps();
         pwM1.countCharacters("Hello World!");
 
+
+        Integer[] anIntegerArr0002 = {1, 2, 3, 4, 5, 1, 3, 5};
+        pwM1.countRepeatations(anIntegerArr0002);
+
         System.out.println("X-----------------------------------PlayWithMaps ends-----------------------------------X");
 
 
