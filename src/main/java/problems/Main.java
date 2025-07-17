@@ -1,6 +1,8 @@
 package problems;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Main {
@@ -52,6 +54,16 @@ public class Main {
 
 
         System.out.println("X----------------------------------PlayWithLists starts----------------------------------X");
+
+        // PlayWithLists
+
+        PlayWithLists pl0001 = new PlayWithLists();
+
+        Integer[] anIntegerArr0001 = {1,2,3,4,5};
+        List<Integer> aList0001 = List.of(68,7,6341,634,313,213,1);
+        pl0001.isEven(anIntegerArr0001);
+        pl0001.sortAList(aList0001);
+        pl0001.reverseSortAList(aList0001);
 
 
 
