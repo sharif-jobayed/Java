@@ -94,6 +94,13 @@ public class Main {
 
         System.out.println("X-----------------------------------PlayWithSets ends-----------------------------------X");
 
+        System.out.println("X-----------------------------------SumOfNumbers ends-----------------------------------X");
+
+        SumOfNumbers sumOfNumbers1 = new SumOfNumbers();
+        sumOfNumbers1.totalOfANumber(1234);
+
+        System.out.println("X-----------------------------------SumOfNumbers ends-----------------------------------X");
+
     }
 
 }
