@@ -34,8 +34,8 @@ public class Main {
         ));
         fruits.put(5, "Lemon");
 
-        System.out.println("The sorted fruites are: "+ stAPI1.sortByValues(fruits));
-        System.out.println("The reversed sorted fruites are: "+ stAPI1.reverseSortByValues(fruits));
+        System.out.println("The sorted fruites are: " + stAPI1.sortByValues(fruits));
+        System.out.println("The reversed sorted fruites are: " + stAPI1.reverseSortByValues(fruits));
 
 
         System.out.println("X-----------------------------------StreamAPI ends-----------------------------------X");
@@ -94,12 +94,12 @@ public class Main {
 
         System.out.println("X-----------------------------------PlayWithSets ends-----------------------------------X");
 
-        System.out.println("X-----------------------------------SumOfNumbers ends-----------------------------------X");
+        System.out.println("X-----------------------------------PlayWithNumbers_0001 ends-----------------------------------X");
 
-        SumOfNumbers sumOfNumbers1 = new SumOfNumbers();
-        sumOfNumbers1.totalOfANumber(1234);
+        PlayWithNumbers_0001 pWN01 = new PlayWithNumbers_0001();
+        pWN01.totalOfDigits(1234);
 
-        System.out.println("X-----------------------------------SumOfNumbers ends-----------------------------------X");
+        System.out.println("X-----------------------------------PlayWithNumbers_0001 ends-----------------------------------X");
 
     }
 
