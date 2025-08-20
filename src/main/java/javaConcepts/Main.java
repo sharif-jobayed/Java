@@ -7,6 +7,7 @@ import javaConcepts.enumWorks.Day;
 import javaConcepts.enumWorks.Status;
 import javaConcepts.fileAndDirectory.CheckExistence;
 import javaConcepts.fileAndDirectory.CreateDirectories;
+import javaConcepts.oop.OverLoading_0001;
 import javaConcepts.randomPractice.*;
 import javaConcepts.typeJuggling.PrimitiveJuggling_01;
 import javaConcepts.typeJuggling.Random_0001;
@@ -257,6 +258,14 @@ public class Main {
         // Fibonacci_Series
 
 
+
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
+
+        System.out.println("X---------------------X---------------------X---------------------X---------------------X");
+
+        // OverLoading_0001
+        OverLoading_0001 overLoadingTest0001 = new OverLoading_0001();
+        overLoadingTest0001.displayParam("Hello");
 
         System.out.println("X---------------------X---------------------X---------------------X---------------------X");
 
